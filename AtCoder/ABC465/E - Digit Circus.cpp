@@ -12,28 +12,7 @@ double pi = acos(-1);
 const int N = 1e6, mod = 1e9+7, inf = 1e18 + 5;
 
 void solve(){
-    int x,y,k;
-    cin >> x >> y >> k;
-    vector<int> a,b;
-    while(1){
-        a.push_back(x);
-        if(x == 0) break;
-        x /= k;
-    }
-    while(1){
-        b.push_back(y);
-        if(y == 0) break;
-        y /= k;
-    }
-    reverse(a.begin(), a.end());
-    reverse(b.begin(), b.end());
-    int n = min(a.size(), b.size());
-    int p = 0;
-    while(p < n && a[p] == b[p]){
-        p++;
-    }
-    int ans = a.size() + b.size() - 2 * p;
-    cout << ans << endl;
+    
 }
 
 signed main(){
