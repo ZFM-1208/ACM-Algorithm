@@ -10,6 +10,24 @@ using namespace std;
 #define endl '\n'
 double pi = acos(-1);
 const int N = 1e6, mod = 1e9+7, inf = 1e18 + 5;
+struct DSU {
+    vector<int> fa;
+    DSU(int n) {
+        fa.resize(n+1);
+        iota(fa.begin(), fa.end(), 0);
+    }
+    int find(int x){
+        return x == fa[x] ? x : fa[x] = find(fa[x]);
+    }
+    
+    void link(int x, int y){
+        int fx = find(x);
+        int fy = find(y);
+        if(fx != fy){
+            fa[fx] = fy;
+        }
+    }
+};
 
 void solve(){
     
