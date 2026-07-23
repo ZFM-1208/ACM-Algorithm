@@ -19,7 +19,7 @@ void solve(){
         cin >> a[i];
         mp[a[i]].push_back(i);
     }
-    
+
     sort(a.begin()+1, a.end());
     if(a[n] > 2 * a[1] - 1){
         cout << "No" << endl;
@@ -31,7 +31,6 @@ void solve(){
             return;
         }
     }
-
     if(n == 1){
         if(a[1] != 1){
             cout << "No" << endl;
@@ -48,9 +47,7 @@ void solve(){
             cout << 1 << " " << 2 << endl;
         }
         return;
-    }
-    // cout << mp[a[1]].size() << endl;
-    // return;    
+    }  
     if(mp[a[1]].size() == 1){
         if(a[n] != 2 * a[1] - 1){
             cout << "No" << endl;
@@ -68,13 +65,10 @@ void solve(){
             } 
         }
         for(int i = a[2]; i <= a[n]; i++){
-            // if(mp[i].size() > 2)
             for(int j = 2; j < mp[i].size(); j++){
                 cout << mp[i][j] << " " << mp[i-1][0] << endl;
             }
         }
-
-
     }else if(mp[a[1]].size() == 2){
         if(a[n] != 2 * (a[1] - 1)){
             cout << "No" << endl;
@@ -89,7 +83,6 @@ void solve(){
             cout << mp[i-1][1] << " " << mp[i][1] << endl;
         }
         for(int i = a[3]; i <= a[n]; i++){
-            // if(mp[i].size() > 2)
             for(int j = 2; j < mp[i].size(); j++){
                 cout << mp[i][j] << " " << mp[i-1][0] << endl;
             }
@@ -98,8 +91,6 @@ void solve(){
         cout << "No" << endl;
         return;        
     }
-
-
 }
 
 signed main(){
