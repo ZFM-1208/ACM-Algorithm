@@ -1,56 +1,26 @@
-#include<bits/stdc++.h> 
+#include<bits/stdc++.h>
 using namespace std;
+#define rep(i, l, r) for (int i = l; i <= r; i++)
+#define vii vector<int>
+#define pii pair<int, int>
 #define int long long
-vector<int>su;
-void ff(){
-    for(int i = 1; i <= 1000000; i++){
-        bool ok = 0;
-        for(int j = 2; j * j <= i; j++){
-            if(i % j == 0){
-                ok = 1;
-                break;
-            }
-        }
-        if(ok == 0) su.push_back(i);
-    }
-    for(auto x: su) {
-        cout << x << ",";
-    }
-    // int n; cin >> n;
-    // int ans = 0;
-    // if(n&1){
-    //     ans = n * (n / 2);
-    //     if(n % 6 == 3){
-    //         ans -= (n - n / 3);
-    //     }
-    //     cout << ans << endl;
-    // }else{
-    //     int tp = n/2;
+#define pb push_back
+#define fi first
+#define se second
+#define endl '\n'
+double pi = acos(-1);
+const int N = 1e6, mod = 1e9+7, inf = 1e18 + 5;
 
-    //     if(tp & 1){
-    //         int cn = 0;
-    //         cn = n / 2 / 2;
-    //         ans = 2 * n * cn; 
-    //     }else{
-    //         int cn = 0;
-    //         cn = n / 2 / 2;
-    //         ans = 2 * n * cn; 
-    //         ans -= n;
-    //     }
-    //     if(n % 6 == 0) {
-    //         ans -= (n - n / 3);  
-    //     }          
-    //     cout << ans << endl;
-    // }
+void solve(){
+    
 }
+
 signed main(){
-    ios::sync_with_stdio(0);
-    cin.tie(0);
-    cout.tie(0);
+    ios::sync_with_stdio(false);
+    cin.tie(0);cout.tie(0);
     int T = 1;
-    // cin >> T;
-    while(T--){
-        ff();
-    }
+    cin >> T;
+    while(T--)
+        solve();
     return 0;
 }
