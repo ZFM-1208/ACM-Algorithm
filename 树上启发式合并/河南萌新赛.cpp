@@ -31,13 +31,13 @@ void solve(){
         int p = fa[u];
         siz[p] += siz[u];
         if(big[p] == 0 || siz[u] > siz[big[p]]){
-            big[p] = (int)u;
+            big[p] = u;
         }
     }
 
     vector<array<int,3>> ans(n+1, array<int,3>{-1,-1,-1});
     rep(i,1,n) ans[i][0] = 0;
-    static int mx[1 << 22][3];
+    int mx[1 << 22][3];
     memset(mx,-1,sizeof(mx));
     auto query = [&](int x, int root) -> void {
         int s = mask[x];
