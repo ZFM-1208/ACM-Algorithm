@@ -20,8 +20,8 @@ void solve(){
     for(int i = 2; i <= n; i++){
         int p; char c;
         cin >> p >> c;
-        adj[p].pb((int)i);
-        fa[i] = (int)p;
+        adj[p].pb(i);
+        fa[i] = p;
         dep[i] = dep[p] + 1;
         mask[i] = mask[p] ^ (1 << (c - 'a'));
     }
@@ -37,15 +37,14 @@ void solve(){
 
     vector<array<int,3>> ans(n+1, array<int,3>{-1,-1,-1});
     rep(i,1,n) ans[i][0] = 0;
-    int mx[1 << 22][3];
-    memset(mx,-1,sizeof(mx));
+    vector<array<int,3>> mx(1LL << 22, array<int,3>{-1,-1,-1});
     auto query = [&](int x, int root) -> void {
         int s = mask[x];
         auto check = [&](int tar) -> void {
-            rep(rem,0,2){
+            for(int rem = 0; rem < 3; rem++){
                 if(mx[tar][rem] == -1) continue;
                 int len = dep[x] + mx[tar][rem] - 2 * dep[root];
-                ans[root][len % 3] = max(ans[root][len % 3],len);
+                ans[root][len % 3] = max(ans[root][len % 3], len);
             }
         };
         check(s);
@@ -60,9 +59,7 @@ void solve(){
         while(!stk.empty()){
             int u = stk.back();
             stk.pop_back();
-            if(op == 0){
-                query(u,root);
-            }
+            if(op == 0) query(u,root);
             else if(op == 1){
                 int rem = dep[u] % 3;
                 mx[mask[u]][rem] = max(mx[mask[u]][rem],dep[u]);
@@ -70,9 +67,7 @@ void solve(){
             else{
                 mx[mask[u]][dep[u] % 3] = -1;
             }
-            for(int v : adj[u]){
-                stk.pb(v);
-            }
+            for(int v : adj[u]) stk.pb(v);
         }
     };
 
@@ -82,15 +77,14 @@ void solve(){
             self(self,v,0);
         }
         if(big[u] != 0) self(self,big[u],1);
-    
         for(int v : adj[u]){
-            rep(rem,0,2){
-                ans[u][rem] = max(ans[u][rem],ans[v][rem]);
+            for(int rem = 0; rem < 3; rem++){
+                ans[u][rem] = max(ans[u][rem], ans[v][rem]);
             }
         }
         query(u,u);
         int rem = dep[u] % 3;
-        mx[mask[u]][rem] = max(mx[mask[u]][rem],dep[u]);
+        mx[mask[u]][rem] = max(mx[mask[u]][rem], dep[u]);
         for(int v : adj[u]){
             if(v == big[u]) continue;
             change(v,0,u);
