@@ -1,6 +1,6 @@
 #include<bits/stdc++.h>
 using namespace std;
-#define rep(i, l, r) for (int i = l; i <= r; i++)
+#define rep(i, l, r) for(int i = l; i <= r; i++)
 #define vii vector<int>
 #define pii pair<int, int>
 #define int long long
@@ -12,7 +12,28 @@ double pi = acos(-1);
 const int N = 1e6, mod = 1e9+7, inf = 1e18 + 5;
 
 void solve(){
-    
+    int n, x1, y1, x2, y2;
+    cin >> n >> x1 >> y1 >> x2 >> y2;
+    string s; cin >> s;
+    int ans = abs(x1 - x2) + abs(y1 - y2) + n;
+    cout << ans << endl;
+    string t = "";
+    for(char c : s){
+        if(c == 'R'){
+            if(x1 >= x2) t += 'A';
+            else t += 'B';
+        }else if(c == 'L') {
+            if(x1 >= x2) t += 'B';
+            else t += 'A';
+        }else if(c == 'U') {
+            if(y1 >= y2) t += 'A';
+            else t += 'B';
+        }else if(c == 'D') {
+            if(y1 >= y2) t += 'B';
+            else t += 'A';
+        }
+    }
+    cout << t << endl;
 }
 
 signed main(){
