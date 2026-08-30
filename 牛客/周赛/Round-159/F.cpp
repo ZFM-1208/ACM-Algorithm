@@ -18,7 +18,7 @@ struct BIT {
     int lowbit(int x) { return x & -x; }
     
     void add(int x, int c) {
-        // c = (c % mod + mod) % mod;
+        c = (c % mod + mod) % mod;
         for (int i = x; i <= n; i += lowbit(i)) tr[i] = (tr[i] + c) % mod;
     }
     
