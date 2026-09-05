@@ -58,9 +58,8 @@ void solve(){
             return;
         }
     }
-    rep(i,1,n) cout << vis[i] << 
-
-    
+    rep(i,1,n) cout << vis[i];
+    cout << endl;
 }
 
 signed main(){
