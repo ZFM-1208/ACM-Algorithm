@@ -33,7 +33,7 @@ function Get-ProblemFiles {
         Where-Object {
             $_.Extension -in @(".cpp", ".cc", ".cxx") -and
             $_.Length -gt 0 -and
-            (Normalize-RelativePath $_.FullName $Root) -notmatch '(^|/)(\.git|\.cph|\.vscode|\.acm-vscode|templates)(/|$)'
+            (Normalize-RelativePath $_.FullName $Root) -notmatch '(^|/)(\.git|\.cph|\.vscode|\.acm-vscode|templates|cmake-build-[^/]*)(/|$)'
         }
 }
 
