@@ -1,2 +1,6 @@
 # Git hooks must keep LF line endings to run on every checkout.
 .githooks/** text eol=lf
+
+# Auto-generated text files always use LF (keeps CI reproducible).
+*.csv text eol=lf
+*.md text eol=lf

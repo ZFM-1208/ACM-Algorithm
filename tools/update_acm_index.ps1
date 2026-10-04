@@ -143,6 +143,15 @@ function New-NoteRow {
     }
 }
 
+function ConvertTo-Lf {
+    param([Parameter(Mandatory = $true)][string]$Path)
+    $bytes = [System.IO.File]::ReadAllBytes($Path)
+    $hasBom = ($bytes.Length -ge 3 -and $bytes[0] -eq 239 -and $bytes[1] -eq 187 -and $bytes[2] -eq 191)
+    $text = [System.IO.File]::ReadAllText($Path, [System.Text.Encoding]::UTF8)
+    $text = $text -replace "`r`n", "`n"
+    [System.IO.File]::WriteAllText($Path, $text, (New-Object System.Text.UTF8Encoding($hasBom)))
+}
+
 function Escape-Md {
     param([string]$Text)
     if ($null -eq $Text) { return "" }
@@ -192,6 +201,7 @@ $noteRows = foreach ($problem in $problems) {
     New-NoteRow -Problem $problem -Existing $existingNotes[$problem.Path]
 }
 $noteRows | Sort-Object Path | Export-Csv -LiteralPath $notesPath -NoTypeInformation -Encoding UTF8
+ConvertTo-Lf -Path $notesPath
 
 $notesByPath = @{}
 $noteRows | ForEach-Object { $notesByPath[$_.Path] = $_ }
@@ -303,6 +313,7 @@ $lines.Add('- `Mistake`：写错因，比如 `边界没判 n=1`。')
 $lines.Add('- `Note`：随手备注，比如做题思路或题解链接。')
 
 Set-Content -LiteralPath $readmePath -Value $lines -Encoding UTF8
+ConvertTo-Lf -Path $readmePath
 
 Write-Host "Updated $readmePath"
 Write-Host "Updated $notesPath"
