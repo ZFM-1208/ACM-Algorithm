@@ -33,7 +33,7 @@ function Get-ProblemFiles {
         Where-Object {
             $_.Extension -in @(".cpp", ".cc", ".cxx") -and
             $_.Length -gt 0 -and
-            (Normalize-RelativePath $_.FullName $Root) -notmatch '(^|/)(\.git|\.cph|\.vscode|\.acm-vscode)(/|$)'
+            (Normalize-RelativePath $_.FullName $Root) -notmatch '(^|/)(\.git|\.cph|\.vscode|\.acm-vscode|templates)(/|$)'
         }
 }
 
@@ -221,12 +221,27 @@ $reviewProblems = $enriched | Where-Object {
 } | Sort-Object LastWriteTime -Descending
 
 $now = Get-Date -Format "yyyy-MM-dd HH:mm:ss"
+$badges = "[![License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE) " +
+    "![Problems](https://img.shields.io/badge/problems-$($enriched.Count)-blue) " +
+    "![C++](https://img.shields.io/badge/C%2B%2B-20-blue) " +
+    "[![CI](https://github.com/ZFM-1208/ACM-Algorithm/actions/workflows/index-check.yml/badge.svg)](https://github.com/ZFM-1208/ACM-Algorithm/actions/workflows/index-check.yml)"
 $lines = New-Object System.Collections.Generic.List[string]
 $lines.Add("# ACM 刷题知识库")
+$lines.Add("")
+$lines.Add($badges)
 $lines.Add("")
 $lines.Add("> 自动生成时间：$now")
 $lines.Add("")
 $lines.Add('这个 README 由 `tools/update_acm_index.ps1` 扫描代码和 CPH 记录生成。平时只需要改 `problem-notes.csv` 里的标签、状态、是否补题和错因，然后刷新索引。')
+$lines.Add("")
+$lines.Add("## 目录")
+$lines.Add("")
+$lines.Add("- [快速命令](#快速命令)")
+$lines.Add("- [总览](#总览)")
+$lines.Add("- [最近做题](#最近做题)")
+$lines.Add("- [待补题 / 错因记录](#待补题--错因记录)")
+$lines.Add("- [ACM Profile 环境](#acm-profile-环境)")
+$lines.Add("- [记录字段](#记录字段)")
 $lines.Add("")
 $lines.Add("## 快速命令")
 $lines.Add("")
@@ -270,6 +285,14 @@ if ($reviewProblems.Count -eq 0) {
         $lines.Add("| $title | $(Escape-Md $p.Status) | $(Escape-Md $p.Mistake) | $(Escape-Md $p.Tags) | $path |")
     }
 }
+$lines.Add("")
+$lines.Add("## ACM Profile 环境")
+$lines.Add("")
+$lines.Add("这个仓库带了一个独立的 VSCode ACM 环境，用户数据和扩展都放在 `.acm-vscode/`，不污染你日常的 VSCode。")
+$lines.Add("")
+$lines.Add('- 首次安装扩展：双击 `scripts\setup-acm-profile.cmd`')
+$lines.Add('- 启动 ACM 环境：双击 `scripts\open-acm-profile.cmd`')
+$lines.Add("- 详细说明见 [ACM_PROFILE.md](ACM_PROFILE.md)")
 $lines.Add("")
 $lines.Add("## 记录字段")
 $lines.Add("")

@@ -1,0 +1,29 @@
+name: Index Check
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  check-index:
+    runs-on: windows-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Regenerate index
+        shell: powershell
+        run: .\tools\update_acm_index.ps1
+
+      - name: Verify problem-notes.csv is up to date
+        shell: powershell
+        run: |
+          $changed = git status --porcelain problem-notes.csv
+          if ($changed) {
+            echo "::error::problem-notes.csv is out of date. Run tools/update_acm_index.ps1 and commit the result."
+            git diff problem-notes.csv
+            exit 1
+          }
+          echo "Index is up to date."

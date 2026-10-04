@@ -1,8 +1,19 @@
 ﻿# ACM 刷题知识库
 
-> 自动生成时间：2026-10-05 00:37:19
+[![License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE) ![Problems](https://img.shields.io/badge/problems-1188-blue) ![C++](https://img.shields.io/badge/C%2B%2B-20-blue) [![CI](https://github.com/ZFM-1208/ACM-Algorithm/actions/workflows/index-check.yml/badge.svg)](https://github.com/ZFM-1208/ACM-Algorithm/actions/workflows/index-check.yml)
+
+> 自动生成时间：2026-10-05 00:50:32
 
 这个 README 由 `tools/update_acm_index.ps1` 扫描代码和 CPH 记录生成。平时只需要改 `problem-notes.csv` 里的标签、状态、是否补题和错因，然后刷新索引。
+
+## 目录
+
+- [快速命令](#快速命令)
+- [总览](#总览)
+- [最近做题](#最近做题)
+- [待补题 / 错因记录](#待补题--错因记录)
+- [ACM Profile 环境](#acm-profile-环境)
+- [记录字段](#记录字段)
 
 ## 快速命令
 
@@ -31,14 +42,13 @@ VSCode 里也可以运行任务：`ACM: update knowledge base`。
 | DP专练 | 8 |
 | 虚树 | 8 |
 | A训练 | 8 |
-| 树上启发式合并 | 7 |
 | 好题 | 7 |
-| 2.28训练赛 | 5 |
+| 树上启发式合并 | 7 |
 | 二分图 | 5 |
-| templates | 4 |
-| 第六届上海理工大学ACM程序设计全国挑战赛 | 2 |
+| 2.28训练赛 | 5 |
 | 出题R | 2 |
-| **Total** | **1192** |
+| 第六届上海理工大学ACM程序设计全国挑战赛 | 2 |
+| **Total** | **1188** |
 
 ## 最近做题
 
@@ -88,6 +98,14 @@ VSCode 里也可以运行任务：`ACM: update knowledge base`。
 ## 待补题 / 错因记录
 
 _暂无。你可以在 `problem-notes.csv` 里把 `NeedReview` 填成 `是`，或者在 `Mistake` 写错因。_
+
+## ACM Profile 环境
+
+这个仓库带了一个独立的 VSCode ACM 环境，用户数据和扩展都放在 .acm-vscode/，不污染你日常的 VSCode。
+
+- 首次安装扩展：双击 `scripts\setup-acm-profile.cmd`
+- 启动 ACM 环境：双击 `scripts\open-acm-profile.cmd`
+- 详细说明见 [ACM_PROFILE.md](ACM_PROFILE.md)
 
 ## 记录字段
 
