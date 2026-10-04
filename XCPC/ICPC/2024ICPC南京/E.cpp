@@ -12,7 +12,24 @@ double pi = acos(-1);
 const int N = 1e6, mod = 1e9+7, inf = 1e18 + 5;
 
 void solve(){
-    
+    int n,k; cin >> n >> k;
+    string s; cin >> s;
+    int ans = 0;
+    string op;
+    for(int q = 0; q <= min({n-1,k,6LL}); q++){
+        if(q != 0) op += s[q-1];
+        string tp = s.substr(q);
+        if(q != 0) tp = tp + op;
+        int cnt = 0;
+        for(int i = 0; i < n; i++){
+            if(i + 7 <= n && tp.substr(i,7) == "nanjing"){
+                cnt++;
+            }
+        }
+        ans = max(ans, cnt);
+    }
+    cout << ans << endl;
+
 }
 
 signed main(){
