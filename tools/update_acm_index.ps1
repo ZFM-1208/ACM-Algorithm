@@ -143,6 +143,22 @@ function New-NoteRow {
     }
 }
 
+function Sort-Ordinal {
+    param(
+        [Parameter(Mandatory = $true, ValueFromPipeline = $true)]$InputObject,
+        [Parameter(Mandatory = $true)][string]$Property
+    )
+    begin { $list = New-Object System.Collections.Generic.List[object] }
+    process { $list.Add($InputObject) }
+    end {
+        $list.Sort([System.Comparison[object]]{
+            param($a, $b)
+            [System.StringComparer]::Ordinal.Compare($a.$Property, $b.$Property)
+        })
+        $list
+    }
+}
+
 function ConvertTo-Lf {
     param([Parameter(Mandatory = $true)][string]$Path)
     $bytes = [System.IO.File]::ReadAllBytes($Path)
@@ -194,13 +210,13 @@ $problems = Get-ProblemFiles -Root $root | ForEach-Object {
         Url           = $url
         LastWriteTime = $_.LastWriteTime
     }
-} | Sort-Object Path
+} | Sort-Ordinal -Property Path
 
 $existingNotes = Read-Notes -NotesPath $notesPath
 $noteRows = foreach ($problem in $problems) {
     New-NoteRow -Problem $problem -Existing $existingNotes[$problem.Path]
 }
-$noteRows | Sort-Object Path | Export-Csv -LiteralPath $notesPath -NoTypeInformation -Encoding UTF8
+$noteRows | Sort-Ordinal -Property Path | Export-Csv -LiteralPath $notesPath -NoTypeInformation -Encoding UTF8
 ConvertTo-Lf -Path $notesPath
 
 $notesByPath = @{}

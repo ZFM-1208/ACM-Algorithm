@@ -13,42 +13,9 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Report fresh checkout state
-        shell: powershell
-        run: |
-          $p = (Resolve-Path problem-notes.csv).Path
-          $b = [System.IO.File]::ReadAllBytes($p)
-          $bom = ($b[0] -eq 239 -and $b[1] -eq 187 -and $b[2] -eq 191)
-          $cr = ($b | Where-Object {$_ -eq 13}).Count
-          $auto = git config --get core.autocrlf
-          echo "::warning title=FRESH::autocrlf=$auto BOM=$bom CR=$cr"
-          exit 0
-
       - name: Regenerate index
         shell: powershell
         run: .\tools\update_acm_index.ps1
-
-      - name: Report after-regenerate state
-        shell: powershell
-        run: |
-          $p = (Resolve-Path problem-notes.csv).Path
-          $b = [System.IO.File]::ReadAllBytes($p)
-          $bom = ($b[0] -eq 239 -and $b[1] -eq 187 -and $b[2] -eq 191)
-          $cr = ($b | Where-Object {$_ -eq 13}).Count
-          echo "::warning title=AFTER::BOM=$bom CR=$cr"
-          $diff = git diff problem-notes.csv
-          $removed = New-Object System.Collections.Generic.List[string]
-          $added = New-Object System.Collections.Generic.List[string]
-          foreach($line in $diff){
-            if($line -match '^-("(?:[^"]|"")*")'){ [void]$removed.Add($matches[1]) }
-            elseif($line -match '^\+("(?:[^"]|"")*")'){ [void]$added.Add($matches[1]) }
-          }
-          echo "::warning title=COUNTS::removed=$($removed.Count) added=$($added.Count)"
-          $r = ($removed -join ' ~ ')
-          echo "::warning title=REMOVED::$r"
-          $a = ($added -join ' ~ ')
-          echo "::warning title=ADDED::$a"
-          exit 0
 
       - name: Verify problem-notes.csv is up to date
         shell: powershell
