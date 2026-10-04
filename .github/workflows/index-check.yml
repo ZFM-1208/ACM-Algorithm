@@ -13,25 +13,39 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      - name: Inspect fresh checkout
+        shell: powershell
+        run: |
+          echo "=== git config ==="
+          git config --get core.autocrlf
+          echo "=== fresh csv BOM/CR ==="
+          $p = (Resolve-Path problem-notes.csv).Path
+          $b = [System.IO.File]::ReadAllBytes($p)
+          echo ("FRESH_BOM=" + ($b[0] -eq 239 -and $b[1] -eq 187 -and $b[2] -eq 191))
+          echo ("FRESH_CR=" + ($b | Where-Object {$_ -eq 13}).Count)
+          echo "=== fresh status ==="
+          git status --porcelain
+          exit 0
+
       - name: Regenerate index
         shell: powershell
         run: .\tools\update_acm_index.ps1
 
-      - name: Diagnose
-        if: always()
+      - name: Inspect after regenerate
         shell: powershell
         run: |
-          echo "=== git status ==="
-          git status --porcelain
-          echo "=== csv BOM/CR ==="
+          echo "=== after csv BOM/CR ==="
           $p = (Resolve-Path problem-notes.csv).Path
           $b = [System.IO.File]::ReadAllBytes($p)
-          echo ("BOM=" + ($b[0] -eq 239 -and $b[1] -eq 187 -and $b[2] -eq 191))
-          echo ("CR=" + ($b | Where-Object {$_ -eq 13}).Count
+          echo ("AFTER_BOM=" + ($b[0] -eq 239 -and $b[1] -eq 187 -and $b[2] -eq 191))
+          echo ("AFTER_CR=" + ($b | Where-Object {$_ -eq 13}).Count)
+          echo "=== after status ==="
+          git status --porcelain
           echo "=== diff ignoring CR (empty = only line endings) ==="
           git diff --ignore-cr-at-eol problem-notes.csv
-          echo "=== diff stat ==="
-          git diff --stat problem-notes.csv
+          echo "=== full diff (first 40) ==="
+          git diff problem-notes.csv | Select-Object -First 40
+          exit 0
 
       - name: Verify problem-notes.csv is up to date
         shell: powershell
