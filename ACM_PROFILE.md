@@ -7,7 +7,7 @@
 双击：
 
 ```bat
-setup-acm-profile.cmd
+scripts\setup-acm-profile.cmd
 ```
 
 它只会给 ACM 环境安装这些扩展：
@@ -24,7 +24,7 @@ setup-acm-profile.cmd
 双击：
 
 ```bat
-open-acm-profile.cmd
+scripts\open-acm-profile.cmd
 ```
 
 等价命令：
@@ -35,4 +35,4 @@ code --new-window --user-data-dir D:\VSC\code_ex\.acm-vscode\user-data --extensi
 
 ## 配置同步
 
-`open-acm-profile.cmd` 每次启动前会同步你的 C++ snippets 和快捷键到 ACM 环境；扩展只需要首次用 `setup-acm-profile.cmd` 安装。
+`scripts\open-acm-profile.cmd` 每次启动前会同步你的 C++ snippets 和快捷键到 ACM 环境；扩展只需要首次用 `scripts\setup-acm-profile.cmd` 安装。

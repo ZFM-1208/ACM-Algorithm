@@ -32,6 +32,7 @@ function Get-ProblemFiles {
     Get-ChildItem -LiteralPath $Root -Recurse -File -ErrorAction SilentlyContinue |
         Where-Object {
             $_.Extension -in @(".cpp", ".cc", ".cxx") -and
+            $_.Length -gt 0 -and
             (Normalize-RelativePath $_.FullName $Root) -notmatch '(^|/)(\.git|\.cph|\.vscode|\.acm-vscode)(/|$)'
         }
 }
