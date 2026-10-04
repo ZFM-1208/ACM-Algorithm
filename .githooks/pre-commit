@@ -1,0 +1,16 @@
+#!/bin/sh
+# Auto-update ACM knowledge base before each commit.
+ROOT=$(git rev-parse --show-toplevel)
+
+if command -v powershell.exe >/dev/null 2>&1; then
+  PS_CMD=powershell.exe
+else
+  PS_CMD=powershell
+fi
+
+"$PS_CMD" -NoProfile -ExecutionPolicy Bypass -File "$ROOT/tools/update_acm_index.ps1" || {
+  echo "[ACM hook] update_acm_index.ps1 failed; commit aborted." >&2
+  exit 1
+}
+
+git -C "$ROOT" add README.md problem-notes.csv
