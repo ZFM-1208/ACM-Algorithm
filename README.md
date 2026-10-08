@@ -2,7 +2,7 @@
 
 [![License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE) ![Problems](https://img.shields.io/badge/problems-1200-blue) ![C++](https://img.shields.io/badge/C%2B%2B-20-blue) [![CI](https://github.com/ZFM-1208/ACM-Algorithm/actions/workflows/index-check.yml/badge.svg)](https://github.com/ZFM-1208/ACM-Algorithm/actions/workflows/index-check.yml)
 
-> 自动生成时间：2026-10-08 14:04:03
+> 自动生成时间：2026-10-08 16:03:33
 
 这个 README 由 `tools/update_acm_index.ps1` 扫描代码和 CPH 记录生成。平时只需要改 `problem-notes.csv` 里的标签、状态、是否补题和错因，然后刷新索引。
 
@@ -54,10 +54,10 @@ VSCode 里也可以运行任务：`ACM: update knowledge base`。
 
 | 时间 | 平台 | 题目 | 标签 | 状态 | 错因/备注 | 路径 |
 | --- | --- | --- | --- | --- | --- | --- |
+| 2026-10-08 | XCPC | L - 树上游戏 |  |  |  | [code](XCPC/CCPC/2024CCPC哈尔滨站/L%20-%20树上游戏.cpp) |
 | 2026-10-08 | XCPC | J - 新能源汽车 |  |  |  | [code](XCPC/CCPC/2024CCPC哈尔滨站/J%20-%20新能源汽车.cpp) |
 | 2026-10-08 | XCPC | C - 在哈尔滨指路 |  |  |  | [code](XCPC/CCPC/2024CCPC哈尔滨站/C%20-%20在哈尔滨指路.cpp) |
 | 2026-10-08 | CodeForces | [F](https://codeforces.com/contest/2275/problem/F) |  |  |  | [code](CodeForces/2275/F.cpp) |
-| 2026-10-08 | XCPC | L - 树上游戏 |  |  |  | [code](XCPC/CCPC/2024CCPC哈尔滨站/L%20-%20树上游戏.cpp) |
 | 2026-10-08 | XCPC | B - 凹包 |  |  |  | [code](XCPC/CCPC/2024CCPC哈尔滨站/B%20-%20凹包.cpp) |
 | 2026-10-08 | XCPC | A - 造计算机 |  |  |  | [code](XCPC/CCPC/2024CCPC哈尔滨站/A%20-%20造计算机.cpp) |
 | 2026-10-08 | XCPC | M - 奇怪的上取整 |  |  |  | [code](XCPC/CCPC/2024CCPC哈尔滨站/M%20-%20奇怪的上取整.cpp) |
