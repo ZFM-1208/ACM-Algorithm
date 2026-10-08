@@ -9,99 +9,111 @@ using namespace std;
 #define se second
 #define endl '\n'
 double pi = acos(-1);
-const int N = 1e6, mod = 1e9+7, inf = 1e18 + 5;
-struct node{
-    int to,w;
+const int N = 1e6, mod = 1e9+7, inf = 8e18; 
+using i128 = __int128_t;
+struct Point {
+    int x, y, id;
+    Point(int x = 0, int y = 0, int id = 0) : x(x), y(y), id(id) {}
+    Point operator-(const Point& o) const { return Point(x - o.x, y - o.y); }
+    Point operator+(const Point& o) const { return Point(x + o.x, y + o.y); }
+    bool operator<(const Point& o) const { return x < o.x || (x == o.x && y < o.y); }
+    bool operator==(const Point& o) const { return x == o.x && y == o.y; }
 };
+
+int Cross(Point a, Point b) {
+    return (int)((i128)a.x * b.y - (i128)a.y * b.x);
+}
+
+int ConvexHull(Point* p, int n, Point* ch){
+    sort(p, p + n);
+    int m = 0;
+    for(int i = 0; i < n; i++){
+        while(m > 1 && Cross(ch[m-1] - ch[m-2], p[i] - ch[m-2]) <= 0) m--;
+        ch[m++] = p[i];
+    }
+    int k = m;
+    for(int i = n - 2; i >= 0; i--){
+        while(m > k && Cross(ch[m-1] - ch[m-2], p[i] - ch[m-2]) <= 0) m--;
+        ch[m++] = p[i];
+    }
+    if(n > 1) m--;
+    return m;
+}
+
 void solve(){
-    int L,R; cin >> L >> R;
-    map<int, vector<node>> g;
-    int mx = -1;
-    int cnt = 0;
-    auto dfs = [&](auto& self, int u, int bit, int l, int r) -> void {
-        int mid = 1 << bit;
-        // [0, mid - 1]
-        if (l <= mid - 1) {
-            int l0 = l, r0 = min(r, mid - 1);
-            if (l0 == 0 && r0 == mid - 1) {
-                g[u].push_back({-1 - bit, 0});
-                mx = max(mx, bit);
-            } else {
-                int v = ++cnt;
-                g[u].push_back({v, 0});
-                self(self, v, bit - 1, l0, r0);
+    int n; 
+    cin >> n;
+    vector<Point> p(n);
+    for(int i = 0; i < n; i++){
+        cin >> p[i].x >> p[i].y;
+        p[i].id = i;
+    }
+    if(n == 3){
+        cout << -1 << endl;
+        return;
+    }
+    vector<Point> ch(2 * n);
+    int m = ConvexHull(p.data(), n, ch.data());
+    if(m == n){
+        cout << -1 << endl;
+        return;
+    }
+    int ans = 0;
+    for(int i = 1; i < m - 1; i++){
+        ans += Cross(ch[i] - ch[0], ch[i+1] - ch[0]);
+    }
+    ans = abs(ans);
+    vector<bool> on_hull(n, false);
+    for(int i = 0; i < m; i++){
+        on_hull[ch[i].id] = true;
+    }
+    vector<Point> inner;
+    for(int i = 0; i < n; i++){
+        if(!on_hull[p[i].id]){
+            inner.pb(p[i]);
+        }
+    }
+    int k_in = inner.size();
+    int mn = inf;
+
+    if(k_in < 3){
+        for(int i = 0; i < m; i++){
+            Point e = ch[(i + 1) % m] - ch[i];
+            for(int t = 0; t < k_in; t++){
+                int cur = Cross(e, inner[t] - ch[i]);
+                mn = min(mn, cur);
             }
         }
-
-        // [mid, 2 * mid - 1]
-        if (r >= mid) {
-            int l1 = max(l, mid) - mid, r1 = r - mid;
-            if (l1 == 0 && r1 == mid - 1) {
-                g[u].push_back({-1 - bit, 1});
-                mx = max(mx, bit);
-            } else {
-                int v = ++cnt;
-                g[u].push_back({v, 1});
-                self(self, v, bit - 1, l1, r1);
-            }
-        }
-    };
-    for(int len = 1; len <= 20; len++){
-        int lo = max(L,1LL << (len - 1));
-        int hi = min(R, (1LL << len) - 1);
-        if(lo > hi) continue;
-        int rlen = len - 1;
-        if(len == 1){
-            g[0].pb({-1,1});
-            mx = max(mx, 0LL);
-            continue;
-        }
-        int l = lo - (1LL << (len - 1));
-        int r = hi - (1LL << (len - 1));
-        if(l == 0 && r == (1LL << (len - 1)) - 1){
-            g[0].pb({-1-(len-1),1});
-            mx = max(mx, len - 1);
-        }else{
-            cnt++;
-            g[0].pb({cnt, 1});
-            dfs(dfs, cnt, len - 1 - 1, l, r);
-        }
-    }
-    for (int d = mx; d >= 1; d--) {
-        g[-1 - d].push_back({-1 - (d - 1), 0});
-        g[-1 - d].push_back({-1 - (d - 1), 1});
-    }
-    map<int, int> id;
-    int n = 0;
-    id[0] = ++n;
-    for (int i = 1; i <= cnt; i++) {
-        id[i] = ++n;
-    }
-    for (int d = mx; d >= 0; d--) {
-        id[-1 - d] = ++n; 
+        cout << ans - mn << endl;
+        return;
     }
 
-    vector<vector<pii>> adj(n + 1);
-    for (auto& [u, edges] : g){
-        for (auto& e : edges) {
-            adj[id[u]].push_back({id[e.to], e.w});
+    vector<Point> q(2 * k_in);
+    int k = ConvexHull(inner.data(), k_in, q.data());
+
+    int j = 0;
+    Point e0 = ch[1] - ch[0];
+    for(int t = 1; t < k; t++){
+        if(Cross(e0, q[t] - ch[0]) < Cross(e0, q[j] - ch[0])){
+            j = t;
         }
     }
-    cout << n << "\n";
-    for (int i = 1; i <= n; i++) {
-        cout << adj[i].size();
-        for (auto& [v, w] : adj[i]) {
-            cout << " " << v << " " << w;
+    for(int i = 0; i < m; i++){
+        Point e = ch[(i + 1) % m] - ch[i];
+        while(Cross(e, q[(j + 1) % k] - ch[i]) < Cross(e, q[j] - ch[i])){
+            j = (j + 1) % k;
         }
-        cout << "\n";
+        int cur = Cross(e, q[j] - ch[i]);
+        mn = min(mn, cur);
     }
+    cout << ans - mn << endl;
 }
 
 signed main(){
     ios::sync_with_stdio(false);
-    cin.tie(0);cout.tie(0);
+    cin.tie(0); cout.tie(0);
     int T = 1;
-    // cin >> T;
+    cin >> T;
     while(T--)
         solve();
     return 0;
