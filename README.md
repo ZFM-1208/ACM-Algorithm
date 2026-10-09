@@ -1,8 +1,8 @@
 ﻿# ACM 刷题知识库
 
-[![License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE) ![Problems](https://img.shields.io/badge/problems-1200-blue) ![C++](https://img.shields.io/badge/C%2B%2B-20-blue) [![CI](https://github.com/ZFM-1208/ACM-Algorithm/actions/workflows/index-check.yml/badge.svg)](https://github.com/ZFM-1208/ACM-Algorithm/actions/workflows/index-check.yml)
+[![License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE) ![Problems](https://img.shields.io/badge/problems-1206-blue) ![C++](https://img.shields.io/badge/C%2B%2B-20-blue) [![CI](https://github.com/ZFM-1208/ACM-Algorithm/actions/workflows/index-check.yml/badge.svg)](https://github.com/ZFM-1208/ACM-Algorithm/actions/workflows/index-check.yml)
 
-> 自动生成时间：2026-10-08 17:25:53
+> 自动生成时间：2026-10-09 16:34:55
 
 这个 README 由 `tools/update_acm_index.ps1` 扫描代码和 CPH 记录生成。平时只需要改 `problem-notes.csv` 里的标签、状态、是否补题和错因，然后刷新索引。
 
@@ -29,7 +29,7 @@ VSCode 里也可以运行任务：`ACM: update knowledge base`。
 | --- | ---: |
 | 原clion模板残留 | 327 |
 | CodeForces | 289 |
-| XCPC | 116 |
+| XCPC | 122 |
 | 排位赛 | 94 |
 | 牛客 | 67 |
 | AtCoder | 58 |
@@ -48,12 +48,18 @@ VSCode 里也可以运行任务：`ACM: update knowledge base`。
 | 2.28训练赛 | 5 |
 | 出题R | 2 |
 | 第六届上海理工大学ACM程序设计全国挑战赛 | 2 |
-| **Total** | **1200** |
+| **Total** | **1206** |
 
 ## 最近做题
 
 | 时间 | 平台 | 题目 | 标签 | 状态 | 错因/备注 | 路径 |
 | --- | --- | --- | --- | --- | --- | --- |
+| 2026-10-09 | XCPC | I |  |  |  | [code](XCPC/CCPC/2024CCPC重庆赛站/I.cpp) |
+| 2026-10-09 | XCPC | C |  |  |  | [code](XCPC/CCPC/2024CCPC重庆赛站/C.cpp) |
+| 2026-10-09 | XCPC | E |  |  |  | [code](XCPC/CCPC/2024CCPC重庆赛站/E.cpp) |
+| 2026-10-09 | XCPC | B |  |  |  | [code](XCPC/CCPC/2024CCPC重庆赛站/B.cpp) |
+| 2026-10-09 | XCPC | K |  |  |  | [code](XCPC/CCPC/2024CCPC重庆赛站/K.cpp) |
+| 2026-10-09 | XCPC | J |  |  |  | [code](XCPC/CCPC/2024CCPC重庆赛站/J.cpp) |
 | 2026-10-08 | XCPC | L - 树上游戏 |  |  |  | [code](XCPC/CCPC/2024CCPC哈尔滨站/L%20-%20树上游戏.cpp) |
 | 2026-10-08 | XCPC | A - 造计算机 |  |  |  | [code](XCPC/CCPC/2024CCPC哈尔滨站/A%20-%20造计算机.cpp) |
 | 2026-10-08 | XCPC | J - 新能源汽车 |  |  |  | [code](XCPC/CCPC/2024CCPC哈尔滨站/J%20-%20新能源汽车.cpp) |
@@ -88,12 +94,6 @@ VSCode 里也可以运行任务：`ACM: update knowledge base`。
 | 2026-09-05 | CodeForces | [E](https://codeforces.com/contest/2259/problem/E) |  |  |  | [code](CodeForces/2259/E.cpp) |
 | 2026-09-05 | CodeForces | [D](https://codeforces.com/contest/2259/problem/D) |  |  |  | [code](CodeForces/2259/D.cpp) |
 | 2026-09-05 | CodeForces | [B](https://codeforces.com/contest/2259/problem/B) |  |  |  | [code](CodeForces/2259/B.cpp) |
-| 2026-09-05 | CodeForces | [C](https://codeforces.com/contest/2259/problem/C) |  |  |  | [code](CodeForces/2259/C.cpp) |
-| 2026-09-05 | CodeForces | [A](https://codeforces.com/contest/2259/problem/A) |  |  |  | [code](CodeForces/2259/A.cpp) |
-| 2026-08-30 | 牛客 | F |  |  |  | [code](牛客/周赛/Round-159/F.cpp) |
-| 2026-08-30 | 牛客 | A |  |  |  | [code](牛客/周赛/Round-159/A.cpp) |
-| 2026-08-30 | 牛客 | B |  |  |  | [code](牛客/周赛/Round-159/B.cpp) |
-| 2026-08-30 | 牛客 | C |  |  |  | [code](牛客/周赛/Round-159/C.cpp) |
 
 ## 待补题 / 错因记录
 
