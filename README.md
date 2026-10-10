@@ -2,7 +2,7 @@
 
 [![License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE) ![Problems](https://img.shields.io/badge/problems-1206-blue) ![C++](https://img.shields.io/badge/C%2B%2B-20-blue) [![CI](https://github.com/ZFM-1208/ACM-Algorithm/actions/workflows/index-check.yml/badge.svg)](https://github.com/ZFM-1208/ACM-Algorithm/actions/workflows/index-check.yml)
 
-> 自动生成时间：2026-10-09 16:34:55
+> 自动生成时间：2026-10-10 14:55:55
 
 这个 README 由 `tools/update_acm_index.ps1` 扫描代码和 CPH 记录生成。平时只需要改 `problem-notes.csv` 里的标签、状态、是否补题和错因，然后刷新索引。
 
@@ -54,7 +54,7 @@ VSCode 里也可以运行任务：`ACM: update knowledge base`。
 
 | 时间 | 平台 | 题目 | 标签 | 状态 | 错因/备注 | 路径 |
 | --- | --- | --- | --- | --- | --- | --- |
-| 2026-10-09 | XCPC | I |  |  |  | [code](XCPC/CCPC/2024CCPC重庆赛站/I.cpp) |
+| 2026-10-10 | XCPC | I |  |  |  | [code](XCPC/CCPC/2024CCPC重庆赛站/I.cpp) |
 | 2026-10-09 | XCPC | C |  |  |  | [code](XCPC/CCPC/2024CCPC重庆赛站/C.cpp) |
 | 2026-10-09 | XCPC | E |  |  |  | [code](XCPC/CCPC/2024CCPC重庆赛站/E.cpp) |
 | 2026-10-09 | XCPC | B |  |  |  | [code](XCPC/CCPC/2024CCPC重庆赛站/B.cpp) |

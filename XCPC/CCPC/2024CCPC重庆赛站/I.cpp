@@ -1,6 +1,7 @@
 #include<bits/stdc++.h>
 using namespace std;
-#define rep(i, l, r) for (int i = l; i <= r; i+1);
+#define rep(i, l, r) for (int i = l; i <= r; i++)
+#define vii vector<int>
 #define pii pair<int, int>
 #define int long long
 #define pb push_back
@@ -8,125 +9,49 @@ using namespace std;
 #define se second
 #define endl '\n'
 double pi = acos(-1);
-const int N = 1e6, mod = 998244353, inf = 1e18 + 5;
+const int N = 1e6, mod = 998244353 , inf = 1e18 + 5;
+/*
+     2 * 7 = 14
+
+     3 * 7 = 21
+
+     2 * 8 = 16
+
+     1和2凑3，3个1凑3，2个1凑2，剩下1加到最小数
+*/
 void solve(){
- int arr[100]={0};
- for(int i=1;i<=9;i++)
- {
-    cin>>arr[i];
- }
- if(arr[1]==0)
- {
-    int t=1;
-   for(int i=1;i<=9;i++)
-   {
-    for(int j=1;j<=arr[i];j++)
-    {
-        t=(t*i)%mod;
+    vii a(11);
+    for(int i = 1; i <= 9; i++) cin >> a[i];
+    while(a[2] >= 1 && a[1] >= 1) {
+        a[2]--;
+        a[1]--;
+        a[3]++;
     }
-   }
-   cout<<t<<'\n';
- }
- else if(arr[2]==0)
- {
-    int x=arr[1];
-    while(arr[1]>=3)
-    {
-        arr[3]++;
-        arr[1]-=3;
+    while(a[1] >= 3){
+        a[1] -= 3;
+        a[3]++;
     }
-    int xx=arr[1];
-    arr[1]=0;
-    arr[xx]++;
-    if(arr[1]==0)
-    {
-        int t=1;
-        for(int i=2;i<=9;i++)
-        {
-            for(int j=1;j<=arr[i];j++)
-           {
-        t=(t*i)%mod;
-           }
-        }
-        cout<<t<<'\n';
-        return;
+    while(a[1] >= 2){
+        a[1] -= 2;
+        a[2]++;
     }
-    else 
-    {
-        for(int i=2;i<=9;i++)
-        {
-            if(arr[i]!=0)
-            {
-                arr[i]--;
-                arr[i+1]++;
+    if(a[1]){
+        for(int i = 2; i <= 9; i++){
+            if(a[i]){
+                a[1]--;
+                a[i]--;
+                a[i+1]++;
                 break;
             }
         }
-        int t=1;
-        for(int i=2;i<=10;i++)
-        {
-            for(int j=1;j<=arr[i];j++)
-           {
-             t=(t*i)%mod;
-           }
-        }
-        cout<<t<<'\n';
-        return;
     }
-    
- }
- else 
- {
-    int k=min(arr[2],arr[1]);
-    arr[1]-=k;
-    arr[2]-=k;
-    arr[3]+=k;
-    int x=arr[1];
-    while(arr[1]>=3)
-    {
-        arr[3]++;
-        arr[1]-=3;
+    int ans = 1;
+    for(int i = 1; i <= 10; i++){
+        while(a[i]--) ans = ans * i % mod;
     }
-    int xx=arr[1];
-    arr[1]=0;
-    arr[xx]++;
-    if(arr[1]==0)
-    {
-        int t=1;
-        for(int i=2;i<=9;i++)
-        {
-            for(int j=1;j<=arr[i];j++)
-           {
-        t=(t*i)%mod;
-           }
-        }
-        cout<<t<<'\n';
-        return;
-    }
-    else 
-    {
-        for(int i=2;i<=9;i++)
-        {
-            if(arr[i]!=0)
-            {
-                arr[i]--;
-                arr[i+1]++;
-                break;
-            }
-        }
-        int t=1;
-        for(int i=2;i<=10;i++)
-        {
-            for(int j=1;j<=arr[i];j++)
-           {
-             t=(t*i)%mod;
-           }
-        }
-        cout<<t<<'\n';
-        return;
-    }
- }
+    cout << ans << endl;
 }
+
 signed main(){
     ios::sync_with_stdio(false);
     cin.tie(0);cout.tie(0);
@@ -136,6 +61,3 @@ signed main(){
         solve();
     return 0;
 }
-// 1 1 1 1 2 3 4
-// 3*3*3*2 
-// 5*3*2*3
