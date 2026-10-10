@@ -1,8 +1,8 @@
 ﻿# ACM 刷题知识库
 
-[![License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE) ![Problems](https://img.shields.io/badge/problems-1206-blue) ![C++](https://img.shields.io/badge/C%2B%2B-20-blue) [![CI](https://github.com/ZFM-1208/ACM-Algorithm/actions/workflows/index-check.yml/badge.svg)](https://github.com/ZFM-1208/ACM-Algorithm/actions/workflows/index-check.yml)
+[![License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE) ![Problems](https://img.shields.io/badge/problems-1208-blue) ![C++](https://img.shields.io/badge/C%2B%2B-20-blue) [![CI](https://github.com/ZFM-1208/ACM-Algorithm/actions/workflows/index-check.yml/badge.svg)](https://github.com/ZFM-1208/ACM-Algorithm/actions/workflows/index-check.yml)
 
-> 自动生成时间：2026-10-10 14:55:55
+> 自动生成时间：2026-10-10 23:30:59
 
 这个 README 由 `tools/update_acm_index.ps1` 扫描代码和 CPH 记录生成。平时只需要改 `problem-notes.csv` 里的标签、状态、是否补题和错因，然后刷新索引。
 
@@ -28,7 +28,7 @@ VSCode 里也可以运行任务：`ACM: update knowledge base`。
 | 平台/目录 | 题数 |
 | --- | ---: |
 | 原clion模板残留 | 327 |
-| CodeForces | 289 |
+| CodeForces | 291 |
 | XCPC | 122 |
 | 排位赛 | 94 |
 | 牛客 | 67 |
@@ -48,15 +48,17 @@ VSCode 里也可以运行任务：`ACM: update knowledge base`。
 | 2.28训练赛 | 5 |
 | 出题R | 2 |
 | 第六届上海理工大学ACM程序设计全国挑战赛 | 2 |
-| **Total** | **1206** |
+| **Total** | **1208** |
 
 ## 最近做题
 
 | 时间 | 平台 | 题目 | 标签 | 状态 | 错因/备注 | 路径 |
 | --- | --- | --- | --- | --- | --- | --- |
+| 2026-10-10 | CodeForces | [B. MEX Game](https://codeforces.com/contest/2271/problem/B) |  |  |  | [code](CodeForces/2271/B.%20MEX%20Game.cpp) |
+| 2026-10-10 | CodeForces | [A. Robot Odd Moves](https://codeforces.com/contest/2271/problem/A) |  |  |  | [code](CodeForces/2271/A.%20Robot%20Odd%20Moves.cpp) |
+| 2026-10-10 | XCPC | E |  |  |  | [code](XCPC/CCPC/2024CCPC重庆赛站/E.cpp) |
 | 2026-10-10 | XCPC | I |  |  |  | [code](XCPC/CCPC/2024CCPC重庆赛站/I.cpp) |
 | 2026-10-09 | XCPC | C |  |  |  | [code](XCPC/CCPC/2024CCPC重庆赛站/C.cpp) |
-| 2026-10-09 | XCPC | E |  |  |  | [code](XCPC/CCPC/2024CCPC重庆赛站/E.cpp) |
 | 2026-10-09 | XCPC | B |  |  |  | [code](XCPC/CCPC/2024CCPC重庆赛站/B.cpp) |
 | 2026-10-09 | XCPC | K |  |  |  | [code](XCPC/CCPC/2024CCPC重庆赛站/K.cpp) |
 | 2026-10-09 | XCPC | J |  |  |  | [code](XCPC/CCPC/2024CCPC重庆赛站/J.cpp) |
@@ -92,8 +94,6 @@ VSCode 里也可以运行任务：`ACM: update knowledge base`。
 | 2026-09-08 | CodeForces | [A](https://codeforces.com/contest/2260/problem/A) |  |  |  | [code](CodeForces/2260/A.cpp) |
 | 2026-09-06 | CodeForces | [F](https://codeforces.com/contest/2259/problem/F) |  |  |  | [code](CodeForces/2259/F.cpp) |
 | 2026-09-05 | CodeForces | [E](https://codeforces.com/contest/2259/problem/E) |  |  |  | [code](CodeForces/2259/E.cpp) |
-| 2026-09-05 | CodeForces | [D](https://codeforces.com/contest/2259/problem/D) |  |  |  | [code](CodeForces/2259/D.cpp) |
-| 2026-09-05 | CodeForces | [B](https://codeforces.com/contest/2259/problem/B) |  |  |  | [code](CodeForces/2259/B.cpp) |
 
 ## 待补题 / 错因记录
 

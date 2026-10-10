@@ -12,25 +12,26 @@ double pi = acos(-1);
 const int N = 1e6, mod = 1e9+7, inf = 1e18 + 5;
 
 void solve(){
-   int n,m; cin >> n >> m;
-   cin>>n>>m;
-   vii a(n+1),d(n+1);
-   int u,v;
-	rep(i,1,n)cin>>a[i];
-	rep(i,1,m)cin>>u>>v,++d[u],++d[v];
-   int mx = 0,gg = 0;
-	rep(i,1,n){
-      if(d[i]-1)mx=max(mx,a[i]);
-      else if(a[i]>=gg)mx=max(mx,gg),gg=a[i];      
-   }
-	cout<<mx; 
+    int a,b; cin >> a >> b;
+    if(b > a+1){
+        cout << -1 << endl;
+        return;
+    }
+    if(a % 2 == b % 2 && b <= a){
+        cout << a << endl;
+    }else if(a % 2 != b % 2 && b <= a+1){
+        cout << a+1 << endl;
+    }else{
+        cout << -1 << endl;
+    }
+
 }
 
 signed main(){
     ios::sync_with_stdio(false);
     cin.tie(0);cout.tie(0);
     int T = 1;
-   //  cin >> T;
+    cin >> T;
     while(T--)
         solve();
     return 0;
