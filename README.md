@@ -1,8 +1,8 @@
 ﻿# ACM 刷题知识库
 
-[![License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE) ![Problems](https://img.shields.io/badge/problems-1223-blue) ![C++](https://img.shields.io/badge/C%2B%2B-20-blue) [![CI](https://github.com/ZFM-1208/ACM-Algorithm/actions/workflows/index-check.yml/badge.svg)](https://github.com/ZFM-1208/ACM-Algorithm/actions/workflows/index-check.yml)
+[![License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE) ![Problems](https://img.shields.io/badge/problems-1224-blue) ![C++](https://img.shields.io/badge/C%2B%2B-20-blue) [![CI](https://github.com/ZFM-1208/ACM-Algorithm/actions/workflows/index-check.yml/badge.svg)](https://github.com/ZFM-1208/ACM-Algorithm/actions/workflows/index-check.yml)
 
-> 自动生成时间：2026-10-13 16:01:00
+> 自动生成时间：2026-10-13 16:28:03
 
 这个 README 由 `tools/update_acm_index.ps1` 扫描代码和 CPH 记录生成。平时只需要改 `problem-notes.csv` 里的标签、状态、是否补题和错因，然后刷新索引。
 
@@ -39,7 +39,7 @@ VSCode 里也可以运行任务：`ACM: update knowledge base`。
 | 奶龙杯-可恶 | 29 |
 | A组队赛 | 23 |
 | 蓝桥杯 | 20 |
-| 有人天生为王，有人落草为寇 | 9 |
+| 有人天生为王，有人落草为寇 | 10 |
 | 虚树 | 8 |
 | A训练 | 8 |
 | DP专练 | 8 |
@@ -50,12 +50,13 @@ VSCode 里也可以运行任务：`ACM: update knowledge base`。
 | Tarjan | 3 |
 | 出题R | 2 |
 | 第六届上海理工大学ACM程序设计全国挑战赛 | 2 |
-| **Total** | **1223** |
+| **Total** | **1224** |
 
 ## 最近做题
 
 | 时间 | 平台 | 题目 | 标签 | 状态 | 错因/备注 | 路径 |
 | --- | --- | --- | --- | --- | --- | --- |
+| 2026-10-13 | 有人天生为王，有人落草为寇 | AC |  |  |  | [code](有人天生为王，有人落草为寇/AC.cpp) |
 | 2026-10-13 | 有人天生为王，有人落草为寇 | AB |  |  |  | [code](有人天生为王，有人落草为寇/AB.cpp) |
 | 2026-10-13 | 有人天生为王，有人落草为寇 | AA |  |  |  | [code](有人天生为王，有人落草为寇/AA.cpp) |
 | 2026-10-13 | Tarjan | (e-BCC) |  |  |  | [code](Tarjan/(e-BCC).cpp) |
@@ -95,7 +96,6 @@ VSCode 里也可以运行任务：`ACM: update knowledge base`。
 | 2026-10-07 | CodeForces | [D](https://codeforces.com/contest/2275/problem/D) |  |  |  | [code](CodeForces/2275/D.cpp) |
 | 2026-10-07 | CodeForces | [B](https://codeforces.com/contest/2275/problem/B) |  |  |  | [code](CodeForces/2275/B.cpp) |
 | 2026-10-07 | CodeForces | [C](https://codeforces.com/contest/2275/problem/C) |  |  |  | [code](CodeForces/2275/C.cpp) |
-| 2026-10-04 | XCPC | G |  |  |  | [code](XCPC/ICPC/2024ICPC南京/G.cpp) |
 
 ## 待补题 / 错因记录
 
