@@ -33,7 +33,7 @@ void solve() {
     vector<bool> is_bridge(m + 1, false); // 标记每条边是否为桥
     int dfn_cnt = 0, ebcc_cnt = 0;
     stack<int> st;
-
+    vector<vii> ebcc_nodes; // 收集各个边双分量包含的节点
     auto tarjan = [&](auto& self, int u, int in_edge_id) -> void {
         dfn[u] = low[u] = ++dfn_cnt;
         st.push(u);
@@ -60,12 +60,15 @@ void solve() {
         // 2. 判定边双分量根：与 SCC 弹栈逻辑完全一致
         if (low[u] == dfn[u]) {
             ebcc_cnt++;
+            vii cur_nodes;
             while (true) {
                 int x = st.top();
                 st.pop();
                 ebcc_id[x] = ebcc_cnt;
+                cur_nodes.pb(x);
                 if (x == u) break;
             }
+            ebcc_nodes.pb(cur_nodes); 
         }
     };
 

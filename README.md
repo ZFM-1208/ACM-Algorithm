@@ -2,7 +2,7 @@
 
 [![License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE) ![Problems](https://img.shields.io/badge/problems-1221-blue) ![C++](https://img.shields.io/badge/C%2B%2B-20-blue) [![CI](https://github.com/ZFM-1208/ACM-Algorithm/actions/workflows/index-check.yml/badge.svg)](https://github.com/ZFM-1208/ACM-Algorithm/actions/workflows/index-check.yml)
 
-> 自动生成时间：2026-10-13 15:39:35
+> 自动生成时间：2026-10-13 15:41:10
 
 这个 README 由 `tools/update_acm_index.ps1` 扫描代码和 CPH 记录生成。平时只需要改 `problem-notes.csv` 里的标签、状态、是否补题和错因，然后刷新索引。
 
@@ -56,6 +56,7 @@ VSCode 里也可以运行任务：`ACM: update knowledge base`。
 
 | 时间 | 平台 | 题目 | 标签 | 状态 | 错因/备注 | 路径 |
 | --- | --- | --- | --- | --- | --- | --- |
+| 2026-10-13 | Tarjan | (e-BCC) |  |  |  | [code](Tarjan/(e-BCC).cpp) |
 | 2026-10-13 | 有人天生为王，有人落草为寇 | Z |  |  |  | [code](有人天生为王，有人落草为寇/Z.cpp) |
 | 2026-10-13 | Tarjan | SCC |  |  |  | [code](Tarjan/SCC.cpp) |
 | 2026-10-13 | 有人天生为王，有人落草为寇 | U |  |  |  | [code](有人天生为王，有人落草为寇/U.cpp) |
@@ -64,7 +65,6 @@ VSCode 里也可以运行任务：`ACM: update knowledge base`。
 | 2026-10-13 | 有人天生为王，有人落草为寇 | R |  |  |  | [code](有人天生为王，有人落草为寇/R.cpp) |
 | 2026-10-13 | 有人天生为王，有人落草为寇 | Q |  |  |  | [code](有人天生为王，有人落草为寇/Q.cpp) |
 | 2026-10-13 | 有人天生为王，有人落草为寇 | P |  |  |  | [code](有人天生为王，有人落草为寇/P.cpp) |
-| 2026-10-13 | Tarjan | (e-BCC) |  |  |  | [code](Tarjan/(e-BCC).cpp) |
 | 2026-10-13 | Tarjan | (v-BCC)无向图建立方圆树 |  |  |  | [code](Tarjan/(v-BCC)无向图建立方圆树.cpp) |
 | 2026-10-13 | XCPC | J. 封闭车站 |  |  |  | [code](XCPC/CCPC/CCPC2026网络热身-第二场/J.%20封闭车站.cpp) |
 | 2026-10-12 | XCPC | F.第二阵风 |  |  |  | [code](XCPC/CCPC/CCPC2026网络热身-第二场/F.第二阵风.cpp) |
