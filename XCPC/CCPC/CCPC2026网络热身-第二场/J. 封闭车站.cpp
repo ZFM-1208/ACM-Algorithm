@@ -24,42 +24,31 @@ void solve(){
     int dfn_cnt = 0, bcc_cnt = 0;
     vii dfn(n + 1, 0), low(n + 1, 0);
     stack<int> st;
-
-    // 圆方树邻接表，开 2 * n + 5 保证不越界
     vector<vii> tree(2 * n + 5);
-
     auto tarjan = [&](auto& self, int u, int fa) -> void {
         dfn[u] = low[u] = ++dfn_cnt;
         st.push(u);
-
-        // 孤立点特判（没有连边时直接退栈）
         if (adj[u].empty()) {
             st.pop();
             return;
         }
-
         for (int v : adj[u]) {
-            if (v == fa) continue; // 忽略反向树边
-
+            if (v == fa) continue; 
             if (!dfn[v]) {
                 self(self, v, u);
                 low[u] = min(low[u], low[v]);
-
-                // 找到割点或以 u 为根的点双连通分量
                 if (low[v] >= dfn[u]) {
                     bcc_cnt++;
-                    int square = n + bcc_cnt; // 新建方点
+                    int fd = n + bcc_cnt; // 新建方点
 
-                    // 割点 u 连向方点
-                    tree[u].pb(square);
-                    tree[square].pb(u);
+                    tree[u].pb(fd);
+                    tree[fd].pb(u);
 
-                    // 弹出该点双内的其余圆点并与方点连边
                     while (true) {
                         int x = st.top();
                         st.pop();
-                        tree[x].pb(square);
-                        tree[square].pb(x);
+                        tree[x].pb(fd);
+                        tree[fd].pb(x);
                         if (x == v) break;
                     }
                 }
@@ -69,7 +58,6 @@ void solve(){
         }
     };
 
-    // 外层循环：支持非连通图 / 森林
     rep(i, 1, n) {
         if (!dfn[i]) {
             tarjan(tarjan, i, 0);
