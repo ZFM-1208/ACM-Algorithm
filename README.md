@@ -1,8 +1,8 @@
 ﻿# ACM 刷题知识库
 
-[![License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE) ![Problems](https://img.shields.io/badge/problems-1210-blue) ![C++](https://img.shields.io/badge/C%2B%2B-20-blue) [![CI](https://github.com/ZFM-1208/ACM-Algorithm/actions/workflows/index-check.yml/badge.svg)](https://github.com/ZFM-1208/ACM-Algorithm/actions/workflows/index-check.yml)
+[![License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE) ![Problems](https://img.shields.io/badge/problems-1211-blue) ![C++](https://img.shields.io/badge/C%2B%2B-20-blue) [![CI](https://github.com/ZFM-1208/ACM-Algorithm/actions/workflows/index-check.yml/badge.svg)](https://github.com/ZFM-1208/ACM-Algorithm/actions/workflows/index-check.yml)
 
-> 自动生成时间：2026-10-12 14:43:35
+> 自动生成时间：2026-10-13 11:05:22
 
 这个 README 由 `tools/update_acm_index.ps1` 扫描代码和 CPH 记录生成。平时只需要改 `problem-notes.csv` 里的标签、状态、是否补题和错因，然后刷新索引。
 
@@ -29,7 +29,7 @@ VSCode 里也可以运行任务：`ACM: update knowledge base`。
 | --- | ---: |
 | 原clion模板残留 | 327 |
 | CodeForces | 292 |
-| XCPC | 123 |
+| XCPC | 124 |
 | 排位赛 | 94 |
 | 牛客 | 67 |
 | AtCoder | 58 |
@@ -48,12 +48,13 @@ VSCode 里也可以运行任务：`ACM: update knowledge base`。
 | 2.28训练赛 | 5 |
 | 出题R | 2 |
 | 第六届上海理工大学ACM程序设计全国挑战赛 | 2 |
-| **Total** | **1210** |
+| **Total** | **1211** |
 
 ## 最近做题
 
 | 时间 | 平台 | 题目 | 标签 | 状态 | 错因/备注 | 路径 |
 | --- | --- | --- | --- | --- | --- | --- |
+| 2026-10-13 | XCPC | J. 封闭车站 |  |  |  | [code](XCPC/CCPC/CCPC2026网络热身-第二场/J.%20封闭车站.cpp) |
 | 2026-10-12 | XCPC | F.第二阵风 |  |  |  | [code](XCPC/CCPC/CCPC2026网络热身-第二场/F.第二阵风.cpp) |
 | 2026-10-12 | A训练 | b |  |  |  | [code](A训练/b.cpp) |
 | 2026-10-11 | A训练 | a |  |  |  | [code](A训练/a.cpp) |
@@ -93,7 +94,6 @@ VSCode 里也可以运行任务：`ACM: update knowledge base`。
 | 2026-09-11 | 牛客 | D |  |  |  | [code](牛客/小白月赛/小白月赛137/D.cpp) |
 | 2026-09-09 | CodeForces | [D](https://codeforces.com/contest/2260/problem/D) |  |  |  | [code](CodeForces/2260/D.cpp) |
 | 2026-09-08 | CodeForces | [C](https://codeforces.com/contest/2260/problem/C) |  |  |  | [code](CodeForces/2260/C.cpp) |
-| 2026-09-08 | CodeForces | [B](https://codeforces.com/contest/2260/problem/B) |  |  |  | [code](CodeForces/2260/B.cpp) |
 
 ## 待补题 / 错因记录
 
