@@ -1,8 +1,8 @@
 ﻿# ACM 刷题知识库
 
-[![License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE) ![Problems](https://img.shields.io/badge/problems-1215-blue) ![C++](https://img.shields.io/badge/C%2B%2B-20-blue) [![CI](https://github.com/ZFM-1208/ACM-Algorithm/actions/workflows/index-check.yml/badge.svg)](https://github.com/ZFM-1208/ACM-Algorithm/actions/workflows/index-check.yml)
+[![License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE) ![Problems](https://img.shields.io/badge/problems-1217-blue) ![C++](https://img.shields.io/badge/C%2B%2B-20-blue) [![CI](https://github.com/ZFM-1208/ACM-Algorithm/actions/workflows/index-check.yml/badge.svg)](https://github.com/ZFM-1208/ACM-Algorithm/actions/workflows/index-check.yml)
 
-> 自动生成时间：2026-10-13 13:42:29
+> 自动生成时间：2026-10-13 14:06:48
 
 这个 README 由 `tools/update_acm_index.ps1` 扫描代码和 CPH 记录生成。平时只需要改 `problem-notes.csv` 里的标签、状态、是否补题和错因，然后刷新索引。
 
@@ -39,24 +39,26 @@ VSCode 里也可以运行任务：`ACM: update knowledge base`。
 | 奶龙杯-可恶 | 29 |
 | A组队赛 | 23 |
 | 蓝桥杯 | 20 |
+| DP专练 | 8 |
 | 虚树 | 8 |
 | A训练 | 8 |
-| DP专练 | 8 |
 | 树上启发式合并 | 7 |
 | 好题 | 7 |
-| 二分图 | 5 |
 | 2.28训练赛 | 5 |
+| 二分图 | 5 |
 | Tarjan | 3 |
+| 有人天生为王，有人落草为寇 | 3 |
 | 出题R | 2 |
 | 第六届上海理工大学ACM程序设计全国挑战赛 | 2 |
-| 有人天生为王，有人落草为寇 | 1 |
-| **Total** | **1215** |
+| **Total** | **1217** |
 
 ## 最近做题
 
 | 时间 | 平台 | 题目 | 标签 | 状态 | 错因/备注 | 路径 |
 | --- | --- | --- | --- | --- | --- | --- |
-| 2026-10-13 | 有人天生为王，有人落草为寇 | A |  |  |  | [code](有人天生为王，有人落草为寇/A.cpp) |
+| 2026-10-13 | 有人天生为王，有人落草为寇 | R |  |  |  | [code](有人天生为王，有人落草为寇/R.cpp) |
+| 2026-10-13 | 有人天生为王，有人落草为寇 | Q |  |  |  | [code](有人天生为王，有人落草为寇/Q.cpp) |
+| 2026-10-13 | 有人天生为王，有人落草为寇 | P |  |  |  | [code](有人天生为王，有人落草为寇/P.cpp) |
 | 2026-10-13 | Tarjan | SCC |  |  |  | [code](Tarjan/SCC.cpp) |
 | 2026-10-13 | Tarjan | (e-BCC) |  |  |  | [code](Tarjan/(e-BCC).cpp) |
 | 2026-10-13 | Tarjan | (v-BCC)无向图建立方圆树 |  |  |  | [code](Tarjan/(v-BCC)无向图建立方圆树.cpp) |
@@ -94,8 +96,6 @@ VSCode 里也可以运行任务：`ACM: update knowledge base`。
 | 2026-09-29 | A训练 | c |  |  |  | [code](A训练/c.cpp) |
 | 2026-09-27 | A训练 | e |  |  |  | [code](A训练/e.cpp) |
 | 2026-09-22 | CodeForces | [D](https://codeforces.com/contest/2266/problem/D) |  |  |  | [code](CodeForces/2266/D.cpp) |
-| 2026-09-22 | CodeForces | [E](https://codeforces.com/contest/2266/problem/E) |  |  |  | [code](CodeForces/2266/E.cpp) |
-| 2026-09-21 | CodeForces | [C](https://codeforces.com/contest/2266/problem/C) |  |  |  | [code](CodeForces/2266/C.cpp) |
 
 ## 待补题 / 错因记录
 
