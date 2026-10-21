@@ -1,8 +1,8 @@
 ﻿# ACM 刷题知识库
 
-[![License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE) ![Problems](https://img.shields.io/badge/problems-1232-blue) ![C++](https://img.shields.io/badge/C%2B%2B-20-blue) [![CI](https://github.com/ZFM-1208/ACM-Algorithm/actions/workflows/index-check.yml/badge.svg)](https://github.com/ZFM-1208/ACM-Algorithm/actions/workflows/index-check.yml)
+[![License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE) ![Problems](https://img.shields.io/badge/problems-1233-blue) ![C++](https://img.shields.io/badge/C%2B%2B-20-blue) [![CI](https://github.com/ZFM-1208/ACM-Algorithm/actions/workflows/index-check.yml/badge.svg)](https://github.com/ZFM-1208/ACM-Algorithm/actions/workflows/index-check.yml)
 
-> 自动生成时间：2026-10-21 11:41:15
+> 自动生成时间：2026-10-21 11:55:25
 
 这个 README 由 `tools/update_acm_index.ps1` 扫描代码和 CPH 记录生成。平时只需要改 `problem-notes.csv` 里的标签、状态、是否补题和错因，然后刷新索引。
 
@@ -29,7 +29,7 @@ VSCode 里也可以运行任务：`ACM: update knowledge base`。
 | --- | ---: |
 | 原clion模板残留 | 327 |
 | CodeForces | 292 |
-| XCPC | 128 |
+| XCPC | 129 |
 | 排位赛 | 94 |
 | 牛客 | 67 |
 | AtCoder | 58 |
@@ -50,15 +50,16 @@ VSCode 里也可以运行任务：`ACM: update knowledge base`。
 | Tarjan | 3 |
 | 出题R | 2 |
 | 第六届上海理工大学ACM程序设计全国挑战赛 | 2 |
-| **Total** | **1232** |
+| **Total** | **1233** |
 
 ## 最近做题
 
 | 时间 | 平台 | 题目 | 标签 | 状态 | 错因/备注 | 路径 |
 | --- | --- | --- | --- | --- | --- | --- |
+| 2026-10-21 | XCPC | M. 余镜 |  |  |  | [code](XCPC/CCPC/2026CCPC长春站/M.%20余镜.cpp) |
+| 2026-10-21 | XCPC | K. 纸带染色 |  |  |  | [code](XCPC/CCPC/2026CCPC长春站/K.%20纸带染色.cpp) |
 | 2026-10-21 | XCPC | C. 无忧旋律 |  |  |  | [code](XCPC/CCPC/2026CCPC长春站/C.%20无忧旋律.cpp) |
 | 2026-10-21 | XCPC | J. 送给好友的惊喜 |  |  |  | [code](XCPC/CCPC/2026CCPC长春站/J.%20送给好友的惊喜.cpp) |
-| 2026-10-21 | XCPC | M. 余镜 |  |  |  | [code](XCPC/CCPC/2026CCPC长春站/M.%20余镜.cpp) |
 | 2026-10-21 | XCPC | A. 又一道纸笔问题 |  |  |  | [code](XCPC/CCPC/2026CCPC长春站/A.%20又一道纸笔问题.cpp) |
 | 2026-10-13 | 有人天生为王，有人落草为寇 | AG |  |  |  | [code](有人天生为王，有人落草为寇/AG.cpp) |
 | 2026-10-13 | 有人天生为王，有人落草为寇 | AF |  |  |  | [code](有人天生为王，有人落草为寇/AF.cpp) |
@@ -95,7 +96,6 @@ VSCode 里也可以运行任务：`ACM: update knowledge base`。
 | 2026-10-08 | XCPC | A - 造计算机 |  |  |  | [code](XCPC/CCPC/2024CCPC哈尔滨站/A%20-%20造计算机.cpp) |
 | 2026-10-08 | XCPC | J - 新能源汽车 |  |  |  | [code](XCPC/CCPC/2024CCPC哈尔滨站/J%20-%20新能源汽车.cpp) |
 | 2026-10-08 | XCPC | C - 在哈尔滨指路 |  |  |  | [code](XCPC/CCPC/2024CCPC哈尔滨站/C%20-%20在哈尔滨指路.cpp) |
-| 2026-10-08 | CodeForces | [F](https://codeforces.com/contest/2275/problem/F) |  |  |  | [code](CodeForces/2275/F.cpp) |
 
 ## 待补题 / 错因记录
 
