@@ -1,8 +1,8 @@
 ﻿# ACM 刷题知识库
 
-[![License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE) ![Problems](https://img.shields.io/badge/problems-1228-blue) ![C++](https://img.shields.io/badge/C%2B%2B-20-blue) [![CI](https://github.com/ZFM-1208/ACM-Algorithm/actions/workflows/index-check.yml/badge.svg)](https://github.com/ZFM-1208/ACM-Algorithm/actions/workflows/index-check.yml)
+[![License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE) ![Problems](https://img.shields.io/badge/problems-1229-blue) ![C++](https://img.shields.io/badge/C%2B%2B-20-blue) [![CI](https://github.com/ZFM-1208/ACM-Algorithm/actions/workflows/index-check.yml/badge.svg)](https://github.com/ZFM-1208/ACM-Algorithm/actions/workflows/index-check.yml)
 
-> 自动生成时间：2026-10-13 20:50:47
+> 自动生成时间：2026-10-21 11:22:03
 
 这个 README 由 `tools/update_acm_index.ps1` 扫描代码和 CPH 记录生成。平时只需要改 `problem-notes.csv` 里的标签、状态、是否补题和错因，然后刷新索引。
 
@@ -29,7 +29,7 @@ VSCode 里也可以运行任务：`ACM: update knowledge base`。
 | --- | ---: |
 | 原clion模板残留 | 327 |
 | CodeForces | 292 |
-| XCPC | 124 |
+| XCPC | 125 |
 | 排位赛 | 94 |
 | 牛客 | 67 |
 | AtCoder | 58 |
@@ -50,12 +50,13 @@ VSCode 里也可以运行任务：`ACM: update knowledge base`。
 | Tarjan | 3 |
 | 出题R | 2 |
 | 第六届上海理工大学ACM程序设计全国挑战赛 | 2 |
-| **Total** | **1228** |
+| **Total** | **1229** |
 
 ## 最近做题
 
 | 时间 | 平台 | 题目 | 标签 | 状态 | 错因/备注 | 路径 |
 | --- | --- | --- | --- | --- | --- | --- |
+| 2026-10-21 | XCPC | A. 又一道纸笔问题 |  |  |  | [code](XCPC/CCPC/2026CCPC长春站/A.%20又一道纸笔问题.cpp) |
 | 2026-10-13 | 有人天生为王，有人落草为寇 | AG |  |  |  | [code](有人天生为王，有人落草为寇/AG.cpp) |
 | 2026-10-13 | 有人天生为王，有人落草为寇 | AF |  |  |  | [code](有人天生为王，有人落草为寇/AF.cpp) |
 | 2026-10-13 | 有人天生为王，有人落草为寇 | AE |  |  |  | [code](有人天生为王，有人落草为寇/AE.cpp) |
@@ -95,7 +96,6 @@ VSCode 里也可以运行任务：`ACM: update knowledge base`。
 | 2026-10-08 | XCPC | B - 凹包 |  |  |  | [code](XCPC/CCPC/2024CCPC哈尔滨站/B%20-%20凹包.cpp) |
 | 2026-10-08 | XCPC | M - 奇怪的上取整 |  |  |  | [code](XCPC/CCPC/2024CCPC哈尔滨站/M%20-%20奇怪的上取整.cpp) |
 | 2026-10-08 | XCPC | K - 农场经营 |  |  |  | [code](XCPC/CCPC/2024CCPC哈尔滨站/K%20-%20农场经营.cpp) |
-| 2026-10-08 | XCPC | G - 欢迎加入线上会议！ |  |  |  | [code](XCPC/CCPC/2024CCPC哈尔滨站/G%20-%20欢迎加入线上会议！.cpp) |
 
 ## 待补题 / 错因记录
 
