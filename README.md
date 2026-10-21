@@ -2,7 +2,7 @@
 
 [![License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE) ![Problems](https://img.shields.io/badge/problems-1233-blue) ![C++](https://img.shields.io/badge/C%2B%2B-20-blue) [![CI](https://github.com/ZFM-1208/ACM-Algorithm/actions/workflows/index-check.yml/badge.svg)](https://github.com/ZFM-1208/ACM-Algorithm/actions/workflows/index-check.yml)
 
-> 自动生成时间：2026-10-21 11:55:25
+> 自动生成时间：2026-10-21 13:21:18
 
 这个 README 由 `tools/update_acm_index.ps1` 扫描代码和 CPH 记录生成。平时只需要改 `problem-notes.csv` 里的标签、状态、是否补题和错因，然后刷新索引。
 
@@ -56,8 +56,8 @@ VSCode 里也可以运行任务：`ACM: update knowledge base`。
 
 | 时间 | 平台 | 题目 | 标签 | 状态 | 错因/备注 | 路径 |
 | --- | --- | --- | --- | --- | --- | --- |
-| 2026-10-21 | XCPC | M. 余镜 |  |  |  | [code](XCPC/CCPC/2026CCPC长春站/M.%20余镜.cpp) |
 | 2026-10-21 | XCPC | K. 纸带染色 |  |  |  | [code](XCPC/CCPC/2026CCPC长春站/K.%20纸带染色.cpp) |
+| 2026-10-21 | XCPC | M. 余镜 |  |  |  | [code](XCPC/CCPC/2026CCPC长春站/M.%20余镜.cpp) |
 | 2026-10-21 | XCPC | C. 无忧旋律 |  |  |  | [code](XCPC/CCPC/2026CCPC长春站/C.%20无忧旋律.cpp) |
 | 2026-10-21 | XCPC | J. 送给好友的惊喜 |  |  |  | [code](XCPC/CCPC/2026CCPC长春站/J.%20送给好友的惊喜.cpp) |
 | 2026-10-21 | XCPC | A. 又一道纸笔问题 |  |  |  | [code](XCPC/CCPC/2026CCPC长春站/A.%20又一道纸笔问题.cpp) |
