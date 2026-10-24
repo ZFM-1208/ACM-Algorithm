@@ -1,8 +1,8 @@
 ﻿# ACM 刷题知识库
 
-[![License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE) ![Problems](https://img.shields.io/badge/problems-1238-blue) ![C++](https://img.shields.io/badge/C%2B%2B-20-blue) [![CI](https://github.com/ZFM-1208/ACM-Algorithm/actions/workflows/index-check.yml/badge.svg)](https://github.com/ZFM-1208/ACM-Algorithm/actions/workflows/index-check.yml)
+[![License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE) ![Problems](https://img.shields.io/badge/problems-1239-blue) ![C++](https://img.shields.io/badge/C%2B%2B-20-blue) [![CI](https://github.com/ZFM-1208/ACM-Algorithm/actions/workflows/index-check.yml/badge.svg)](https://github.com/ZFM-1208/ACM-Algorithm/actions/workflows/index-check.yml)
 
-> 自动生成时间：2026-10-24 20:38:57
+> 自动生成时间：2026-10-24 21:14:45
 
 这个 README 由 `tools/update_acm_index.ps1` 扫描代码和 CPH 记录生成。平时只需要改 `problem-notes.csv` 里的标签、状态、是否补题和错因，然后刷新索引。
 
@@ -32,7 +32,7 @@ VSCode 里也可以运行任务：`ACM: update knowledge base`。
 | XCPC | 129 |
 | 排位赛 | 94 |
 | 牛客 | 67 |
-| AtCoder | 63 |
+| AtCoder | 64 |
 | 杭电 | 55 |
 | 马蹄杯 | 38 |
 | 天梯赛 | 32 |
@@ -50,12 +50,13 @@ VSCode 里也可以运行任务：`ACM: update knowledge base`。
 | Tarjan | 3 |
 | 出题R | 2 |
 | 第六届上海理工大学ACM程序设计全国挑战赛 | 2 |
-| **Total** | **1238** |
+| **Total** | **1239** |
 
 ## 最近做题
 
 | 时间 | 平台 | 题目 | 标签 | 状态 | 错因/备注 | 路径 |
 | --- | --- | --- | --- | --- | --- | --- |
+| 2026-10-24 | AtCoder | [F - Evil Shortest Path](https://atcoder.jp/contests/abc481/tasks/abc481_f) |  |  |  | [code](AtCoder/ABC481/F%20-%20Evil%20Shortest%20Path.cpp) |
 | 2026-10-24 | AtCoder | [E](https://atcoder.jp/contests/abc481/tasks/abc481_e) |  |  |  | [code](AtCoder/ABC481/E.cpp) |
 | 2026-10-24 | AtCoder | [D](https://atcoder.jp/contests/abc481/tasks/abc481_d) |  |  |  | [code](AtCoder/ABC481/D.cpp) |
 | 2026-10-24 | AtCoder | [C](https://atcoder.jp/contests/abc481/tasks/abc481_c) |  |  |  | [code](AtCoder/ABC481/C.cpp) |
@@ -95,7 +96,6 @@ VSCode 里也可以运行任务：`ACM: update knowledge base`。
 | 2026-10-10 | XCPC | I |  |  |  | [code](XCPC/CCPC/2024CCPC重庆赛站/I.cpp) |
 | 2026-10-09 | XCPC | C |  |  |  | [code](XCPC/CCPC/2024CCPC重庆赛站/C.cpp) |
 | 2026-10-09 | XCPC | B |  |  |  | [code](XCPC/CCPC/2024CCPC重庆赛站/B.cpp) |
-| 2026-10-09 | XCPC | K |  |  |  | [code](XCPC/CCPC/2024CCPC重庆赛站/K.cpp) |
 
 ## 待补题 / 错因记录
 
