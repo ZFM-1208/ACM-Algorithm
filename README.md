@@ -1,8 +1,8 @@
 ﻿# ACM 刷题知识库
 
-[![License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE) ![Problems](https://img.shields.io/badge/problems-1233-blue) ![C++](https://img.shields.io/badge/C%2B%2B-20-blue) [![CI](https://github.com/ZFM-1208/ACM-Algorithm/actions/workflows/index-check.yml/badge.svg)](https://github.com/ZFM-1208/ACM-Algorithm/actions/workflows/index-check.yml)
+[![License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE) ![Problems](https://img.shields.io/badge/problems-1237-blue) ![C++](https://img.shields.io/badge/C%2B%2B-20-blue) [![CI](https://github.com/ZFM-1208/ACM-Algorithm/actions/workflows/index-check.yml/badge.svg)](https://github.com/ZFM-1208/ACM-Algorithm/actions/workflows/index-check.yml)
 
-> 自动生成时间：2026-10-21 13:21:18
+> 自动生成时间：2026-10-24 20:07:43
 
 这个 README 由 `tools/update_acm_index.ps1` 扫描代码和 CPH 记录生成。平时只需要改 `problem-notes.csv` 里的标签、状态、是否补题和错因，然后刷新索引。
 
@@ -32,7 +32,7 @@ VSCode 里也可以运行任务：`ACM: update knowledge base`。
 | XCPC | 129 |
 | 排位赛 | 94 |
 | 牛客 | 67 |
-| AtCoder | 58 |
+| AtCoder | 62 |
 | 杭电 | 55 |
 | 马蹄杯 | 38 |
 | 天梯赛 | 32 |
@@ -50,12 +50,18 @@ VSCode 里也可以运行任务：`ACM: update knowledge base`。
 | Tarjan | 3 |
 | 出题R | 2 |
 | 第六届上海理工大学ACM程序设计全国挑战赛 | 2 |
-| **Total** | **1233** |
+| **Total** | **1237** |
 
 ## 最近做题
 
 | 时间 | 平台 | 题目 | 标签 | 状态 | 错因/备注 | 路径 |
 | --- | --- | --- | --- | --- | --- | --- |
+| 2026-10-24 | AtCoder | [D](https://atcoder.jp/contests/abc481/tasks/abc481_d) |  |  |  | [code](AtCoder/ABC481/D.cpp) |
+| 2026-10-24 | AtCoder | [C](https://atcoder.jp/contests/abc481/tasks/abc481_c) |  |  |  | [code](AtCoder/ABC481/C.cpp) |
+| 2026-10-24 | AtCoder | [B](https://atcoder.jp/contests/abc481/tasks/abc481_b) |  |  |  | [code](AtCoder/ABC481/B.cpp) |
+| 2026-10-24 | AtCoder | [A](https://atcoder.jp/contests/abc481/tasks/abc481_a) |  |  |  | [code](AtCoder/ABC481/A.cpp) |
+| 2026-10-24 | A训练 | a |  |  |  | [code](A训练/a.cpp) |
+| 2026-10-24 | A训练 | b |  |  |  | [code](A训练/b.cpp) |
 | 2026-10-21 | XCPC | K. 纸带染色 |  |  |  | [code](XCPC/CCPC/2026CCPC长春站/K.%20纸带染色.cpp) |
 | 2026-10-21 | XCPC | M. 余镜 |  |  |  | [code](XCPC/CCPC/2026CCPC长春站/M.%20余镜.cpp) |
 | 2026-10-21 | XCPC | C. 无忧旋律 |  |  |  | [code](XCPC/CCPC/2026CCPC长春站/C.%20无忧旋律.cpp) |
@@ -80,8 +86,6 @@ VSCode 里也可以运行任务：`ACM: update knowledge base`。
 | 2026-10-13 | Tarjan | (v-BCC)无向图建立方圆树 |  |  |  | [code](Tarjan/(v-BCC)无向图建立方圆树.cpp) |
 | 2026-10-13 | XCPC | J. 封闭车站 |  |  |  | [code](XCPC/CCPC/CCPC2026网络热身-第二场/J.%20封闭车站.cpp) |
 | 2026-10-12 | XCPC | F.第二阵风 |  |  |  | [code](XCPC/CCPC/CCPC2026网络热身-第二场/F.第二阵风.cpp) |
-| 2026-10-12 | A训练 | b |  |  |  | [code](A训练/b.cpp) |
-| 2026-10-11 | A训练 | a |  |  |  | [code](A训练/a.cpp) |
 | 2026-10-11 | XCPC | A Antenna Analysis  |  |  |  | [code](XCPC/CCPC/2021NCPC/A%20Antenna%20Analysis%20.cpp) |
 | 2026-10-11 | CodeForces | [C. XOR Problem](https://codeforces.com/contest/2271/problem/C) |  |  |  | [code](CodeForces/2271/C.%20XOR%20Problem.cpp) |
 | 2026-10-10 | CodeForces | [B. MEX Game](https://codeforces.com/contest/2271/problem/B) |  |  |  | [code](CodeForces/2271/B.%20MEX%20Game.cpp) |
@@ -92,10 +96,6 @@ VSCode 里也可以运行任务：`ACM: update knowledge base`。
 | 2026-10-09 | XCPC | B |  |  |  | [code](XCPC/CCPC/2024CCPC重庆赛站/B.cpp) |
 | 2026-10-09 | XCPC | K |  |  |  | [code](XCPC/CCPC/2024CCPC重庆赛站/K.cpp) |
 | 2026-10-09 | XCPC | J |  |  |  | [code](XCPC/CCPC/2024CCPC重庆赛站/J.cpp) |
-| 2026-10-08 | XCPC | L - 树上游戏 |  |  |  | [code](XCPC/CCPC/2024CCPC哈尔滨站/L%20-%20树上游戏.cpp) |
-| 2026-10-08 | XCPC | A - 造计算机 |  |  |  | [code](XCPC/CCPC/2024CCPC哈尔滨站/A%20-%20造计算机.cpp) |
-| 2026-10-08 | XCPC | J - 新能源汽车 |  |  |  | [code](XCPC/CCPC/2024CCPC哈尔滨站/J%20-%20新能源汽车.cpp) |
-| 2026-10-08 | XCPC | C - 在哈尔滨指路 |  |  |  | [code](XCPC/CCPC/2024CCPC哈尔滨站/C%20-%20在哈尔滨指路.cpp) |
 
 ## 待补题 / 错因记录
 
