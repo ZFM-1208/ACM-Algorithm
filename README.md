@@ -2,7 +2,7 @@
 
 [![License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE) ![Problems](https://img.shields.io/badge/problems-1243-blue) ![C++](https://img.shields.io/badge/C%2B%2B-20-blue) [![CI](https://github.com/ZFM-1208/ACM-Algorithm/actions/workflows/index-check.yml/badge.svg)](https://github.com/ZFM-1208/ACM-Algorithm/actions/workflows/index-check.yml)
 
-> 自动生成时间：2026-10-26 23:26:56
+> 自动生成时间：2026-10-27 00:10:30
 
 这个 README 由 `tools/update_acm_index.ps1` 扫描代码和 CPH 记录生成。平时只需要改 `problem-notes.csv` 里的标签、状态、是否补题和错因，然后刷新索引。
 
@@ -56,10 +56,10 @@ VSCode 里也可以运行任务：`ACM: update knowledge base`。
 
 | 时间 | 平台 | 题目 | 标签 | 状态 | 错因/备注 | 路径 |
 | --- | --- | --- | --- | --- | --- | --- |
-| 2026-10-26 | CodeForces | [C](https://codeforces.com/contest/2272/problem/C) |  |  |  | [code](CodeForces/2272/C.cpp) |
+| 2026-10-27 | CodeForces | [C](https://codeforces.com/contest/2272/problem/C) |  |  |  | [code](CodeForces/2272/C.cpp) |
+| 2026-10-27 | CodeForces | [D](https://codeforces.com/contest/2272/problem/D) |  |  |  | [code](CodeForces/2272/D.cpp) |
 | 2026-10-26 | CodeForces | [B](https://codeforces.com/contest/2272/problem/B) |  |  |  | [code](CodeForces/2272/B.cpp) |
 | 2026-10-26 | CodeForces | [A](https://codeforces.com/contest/2272/problem/A) |  |  |  | [code](CodeForces/2272/A.cpp) |
-| 2026-10-26 | CodeForces | [D](https://codeforces.com/contest/2272/problem/D) |  |  |  | [code](CodeForces/2272/D.cpp) |
 | 2026-10-26 | AtCoder | [A](https://atcoder.jp/contests/abc481/tasks/abc481_a) |  |  |  | [code](AtCoder/ABC481/A.cpp) |
 | 2026-10-24 | AtCoder | [F - Evil Shortest Path](https://atcoder.jp/contests/abc481/tasks/abc481_f) |  |  |  | [code](AtCoder/ABC481/F%20-%20Evil%20Shortest%20Path.cpp) |
 | 2026-10-24 | AtCoder | [E](https://atcoder.jp/contests/abc481/tasks/abc481_e) |  |  |  | [code](AtCoder/ABC481/E.cpp) |
