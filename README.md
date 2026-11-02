@@ -1,8 +1,8 @@
 ﻿# ACM 刷题知识库
 
-[![License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE) ![Problems](https://img.shields.io/badge/problems-1245-blue) ![C++](https://img.shields.io/badge/C%2B%2B-20-blue) [![CI](https://github.com/ZFM-1208/ACM-Algorithm/actions/workflows/index-check.yml/badge.svg)](https://github.com/ZFM-1208/ACM-Algorithm/actions/workflows/index-check.yml)
+[![License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE) ![Problems](https://img.shields.io/badge/problems-1246-blue) ![C++](https://img.shields.io/badge/C%2B%2B-20-blue) [![CI](https://github.com/ZFM-1208/ACM-Algorithm/actions/workflows/index-check.yml/badge.svg)](https://github.com/ZFM-1208/ACM-Algorithm/actions/workflows/index-check.yml)
 
-> 自动生成时间：2026-11-02 13:17:12
+> 自动生成时间：2026-11-02 13:23:38
 
 这个 README 由 `tools/update_acm_index.ps1` 扫描代码和 CPH 记录生成。平时只需要改 `problem-notes.csv` 里的标签、状态、是否补题和错因，然后刷新索引。
 
@@ -28,7 +28,7 @@ VSCode 里也可以运行任务：`ACM: update knowledge base`。
 | 平台/目录 | 题数 |
 | --- | ---: |
 | 原clion模板残留 | 327 |
-| CodeForces | 298 |
+| CodeForces | 299 |
 | XCPC | 129 |
 | 排位赛 | 94 |
 | 牛客 | 67 |
@@ -50,12 +50,13 @@ VSCode 里也可以运行任务：`ACM: update knowledge base`。
 | Tarjan | 3 |
 | 出题R | 2 |
 | 第六届上海理工大学ACM程序设计全国挑战赛 | 2 |
-| **Total** | **1245** |
+| **Total** | **1246** |
 
 ## 最近做题
 
 | 时间 | 平台 | 题目 | 标签 | 状态 | 错因/备注 | 路径 |
 | --- | --- | --- | --- | --- | --- | --- |
+| 2026-11-02 | CodeForces | [C. Math and Physics](https://codeforces.com/contest/2278/problem/C) |  |  |  | [code](CodeForces/2278/C.%20Math%20and%20Physics.cpp) |
 | 2026-11-02 | CodeForces | [B. Stakes and Shapes](https://codeforces.com/contest/2278/problem/B) |  |  |  | [code](CodeForces/2278/B.%20Stakes%20and%20Shapes.cpp) |
 | 2026-11-02 | A训练 | b |  |  |  | [code](A训练/b.cpp) |
 | 2026-11-02 | A训练 | a |  |  |  | [code](A训练/a.cpp) |
@@ -95,7 +96,6 @@ VSCode 里也可以运行任务：`ACM: update knowledge base`。
 | 2026-10-13 | XCPC | J. 封闭车站 |  |  |  | [code](XCPC/CCPC/CCPC2026网络热身-第二场/J.%20封闭车站.cpp) |
 | 2026-10-12 | XCPC | F.第二阵风 |  |  |  | [code](XCPC/CCPC/CCPC2026网络热身-第二场/F.第二阵风.cpp) |
 | 2026-10-11 | XCPC | A Antenna Analysis  |  |  |  | [code](XCPC/CCPC/2021NCPC/A%20Antenna%20Analysis%20.cpp) |
-| 2026-10-11 | CodeForces | [C. XOR Problem](https://codeforces.com/contest/2271/problem/C) |  |  |  | [code](CodeForces/2271/C.%20XOR%20Problem.cpp) |
 
 ## 待补题 / 错因记录
 
