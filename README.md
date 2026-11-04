@@ -1,8 +1,8 @@
 ﻿# ACM 刷题知识库
 
-[![License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE) ![Problems](https://img.shields.io/badge/problems-1249-blue) ![C++](https://img.shields.io/badge/C%2B%2B-20-blue) [![CI](https://github.com/ZFM-1208/ACM-Algorithm/actions/workflows/index-check.yml/badge.svg)](https://github.com/ZFM-1208/ACM-Algorithm/actions/workflows/index-check.yml)
+[![License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE) ![Problems](https://img.shields.io/badge/problems-1251-blue) ![C++](https://img.shields.io/badge/C%2B%2B-20-blue) [![CI](https://github.com/ZFM-1208/ACM-Algorithm/actions/workflows/index-check.yml/badge.svg)](https://github.com/ZFM-1208/ACM-Algorithm/actions/workflows/index-check.yml)
 
-> 自动生成时间：2026-11-02 14:16:55
+> 自动生成时间：2026-11-04 13:46:03
 
 这个 README 由 `tools/update_acm_index.ps1` 扫描代码和 CPH 记录生成。平时只需要改 `problem-notes.csv` 里的标签、状态、是否补题和错因，然后刷新索引。
 
@@ -29,7 +29,7 @@ VSCode 里也可以运行任务：`ACM: update knowledge base`。
 | --- | ---: |
 | 原clion模板残留 | 327 |
 | CodeForces | 302 |
-| XCPC | 129 |
+| XCPC | 131 |
 | 排位赛 | 94 |
 | 牛客 | 67 |
 | AtCoder | 64 |
@@ -50,12 +50,14 @@ VSCode 里也可以运行任务：`ACM: update knowledge base`。
 | Tarjan | 3 |
 | 出题R | 2 |
 | 第六届上海理工大学ACM程序设计全国挑战赛 | 2 |
-| **Total** | **1249** |
+| **Total** | **1251** |
 
 ## 最近做题
 
 | 时间 | 平台 | 题目 | 标签 | 状态 | 错因/备注 | 路径 |
 | --- | --- | --- | --- | --- | --- | --- |
+| 2026-11-04 | XCPC | M - Flipping Cards  |  |  |  | [code](XCPC/CCPC/2023CCPC桂林站/M%20-%20Flipping%20Cards%20.cpp) |
+| 2026-11-04 | XCPC | G - Hard Brackets Problem  |  |  |  | [code](XCPC/CCPC/2023CCPC桂林站/G%20-%20Hard%20Brackets%20Problem%20.cpp) |
 | 2026-11-02 | CodeForces | [F. Modulo and Counting](https://codeforces.com/contest/2278/problem/F) |  |  |  | [code](CodeForces/2278/F.%20Modulo%20and%20Counting.cpp) |
 | 2026-11-02 | CodeForces | [E. Swap and Negate](https://codeforces.com/contest/2278/problem/E) |  |  |  | [code](CodeForces/2278/E.%20Swap%20and%20Negate.cpp) |
 | 2026-11-02 | CodeForces | [D. Lock and Unlock](https://codeforces.com/contest/2278/problem/D) |  |  |  | [code](CodeForces/2278/D.%20Lock%20and%20Unlock.cpp) |
@@ -94,8 +96,6 @@ VSCode 里也可以运行任务：`ACM: update knowledge base`。
 | 2026-10-13 | 有人天生为王，有人落草为寇 | S |  |  |  | [code](有人天生为王，有人落草为寇/S.cpp) |
 | 2026-10-13 | 有人天生为王，有人落草为寇 | R |  |  |  | [code](有人天生为王，有人落草为寇/R.cpp) |
 | 2026-10-13 | 有人天生为王，有人落草为寇 | Q |  |  |  | [code](有人天生为王，有人落草为寇/Q.cpp) |
-| 2026-10-13 | 有人天生为王，有人落草为寇 | P |  |  |  | [code](有人天生为王，有人落草为寇/P.cpp) |
-| 2026-10-13 | Tarjan | (v-BCC)无向图建立方圆树 |  |  |  | [code](Tarjan/(v-BCC)无向图建立方圆树.cpp) |
 
 ## 待补题 / 错因记录
 
